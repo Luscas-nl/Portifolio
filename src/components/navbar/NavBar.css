@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.nav{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    height: 100%;
+    width: 288px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: white;
+}
+
+.colorE{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    text-decoration: underline 3px;
+    color: #ca2929;
+}
+
+.nameBox > h1{
+    margin-left: 25px;
+    font-weight: 600;
+    user-select: none;
+    letter-spacing: -1.5px;
+}
+
+.nameBox{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonsNav{
+    width: 100%;
+    height: 64%;
+    border-bottom: #2b0c0c 2px solid;
+    border-top: #2b0c0c 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonBox{
+    background-color: #3b3b3b;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    margin-right: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonBox > i{
+    font-size: 28px;
+}
+
+.nav.hidden{
+    transform: translateX(-288px) ;
+    display: hidden;
+    transition: .8s ease;
+}
+
+.buttonBox:hover{
+    opacity: .8;
+}
+.emailNav{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailDes{
+    margin-left: 7px;
+}
+
+.photoEmail{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    outline: #ca2929 1px solid;
+}
+
+.emailDes > .email{
+    font-size: .84em;
+    font-weight: 500;
+    color: #727272;
+    cursor: pointer;
+    text-decoration: none;
+} 
+
+.emailDes > .emailName{
+    font-weight: 600;
+}
