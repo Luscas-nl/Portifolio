@@ -23,9 +23,11 @@ function NavBar(props) {
             </div>
 
             <div className="buttonsNav">
-                <NavButton icon="home" text="Home" />
-                <NavButton icon="user" text="About" />
-                <NavButton icon="envelope" text="Contacts" />
+                <div className="buttonsNavBox">
+                    <NavButton icon="home" text="Home" />
+                    <NavButton icon="user" text="About" />
+                    <NavButton icon="envelope" text="Contacts" />
+                </div>
             </div>
 
             <div className="emailNav">

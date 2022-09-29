@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 .nav{
+    position: fixed;
+    top: 0;
+    left: 0;
     font-family: 'Poppins', sans-serif;
     background-color: black;
     height: 100%;
-    width: 288px;
+    width: 320px;
     padding: 0;
     margin: 0;
     text-align: left;
@@ -34,14 +37,18 @@
     align-items: center;
 }
 
+.buttonsNavBox{
+    margin-top: 32px;
+}
+
 .buttonsNav{
     width: 100%;
     height: 64%;
-    border-bottom: #2b0c0c 2px solid;
-    border-top: #2b0c0c 2px solid;
+    border-bottom: #a11f1f 1px solid;
+    border-top: #a11f1f 1px solid;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
 }
 

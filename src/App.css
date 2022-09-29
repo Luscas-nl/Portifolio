@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 #root {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -7,6 +10,79 @@
 }
 
 .App{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
+  padding-left: 320px;
+  float: left;
+  clear: both;
+}
+
+.home{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgIBox{
+  width: 300px;
+  height: 300px;
+
+}
+
+.imgI{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 50% ;
+  border-top-right-radius: 15px ;
+  border-bottom-left-radius: 50% ;
+  border-bottom-right-radius: 125px;
+}
+
+.homeText{
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #fff;
+  padding: 35px;
+}
+
+.homeTitle{
+  font-weight: 600;
+  font-size: 3.7em;
+  color: #fff;
+}
+
+.homeDesc{
+  color: rgb(199, 178, 178);
+  font-weight: 500;
+  font-size: 1.2em;
+  padding-top: 40px;
+}
+
+.iconLinks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7em;
+}
+
+.iconLinks > p{
+  font-weight: 100;
+  font-size: .8em;
+}
+
+.iconLinks > a{
+  margin: 13px;
+  color: rgb(199, 178, 178);
+  text-decoration: none;
+}
+
+.iconLinks > a:hover{
+  opacity: .8;
 }

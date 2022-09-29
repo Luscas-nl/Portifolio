@@ -15,7 +15,10 @@ function NavButton(props) {
 
     return(
         <div onClick={select} href="#" className={"buttonNavigation " + props.text}>
-            <i className={'fa fa-' + props.icon}></i>
+            <div className='iconBox'>
+                <i className={'fa fa-' + props.icon}></i>
+            </div>
+            
             <p>{props.text}</p>
         </div>
     )
