@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+  --transition-time-app: .5s;
+}
 
 #root {
   font-family: 'Poppins', sans-serif;
@@ -12,12 +16,40 @@
 .App{
   font-family: 'Poppins', sans-serif;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   padding-left: 320px;
   float: left;
   clear: both;
+  transition: var(--transition-time-app) ease;
+}
+
+.App.hidden{
+  padding-left: 0;
+}
+
+.menuButton{
+  position: fixed;
+  top: 11px;
+  left: 11px;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: #c7b2b2;
+  transition: .2s ease;
+  display: none;
+}
+
+.menuButton.hidden{
+  display: block;
+}
+
+.menuButton:hover{
+  transform: scale(1.05);
 }
 
 .home{
@@ -29,10 +61,16 @@
   justify-content: center;
 }
 
+.about{
+  width: 100%;
+  height: auto;
+  background-color: #250b0b;
+}
+
 .imgIBox{
   width: 300px;
   height: 300px;
-
+  transition: .8s ease;
 }
 
 .imgI{
@@ -46,23 +84,24 @@
 }
 
 .homeText{
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.3em;
   color: #fff;
-  padding: 35px;
+  margin: 35px;
 }
 
 .homeTitle{
-  font-weight: 600;
+  font-weight: 700;
   font-size: 3.7em;
   color: #fff;
 }
 
 .homeDesc{
-  color: rgb(199, 178, 178);
+  color: #c7b2b2;
   font-weight: 500;
   font-size: 1.2em;
-  padding-top: 40px;
+  margin-top: 35px;
+  margin-bottom: 12px;
 }
 
 .iconLinks{
@@ -75,14 +114,48 @@
 .iconLinks > p{
   font-weight: 100;
   font-size: .8em;
+  user-select: none;
 }
 
 .iconLinks > a{
   margin: 13px;
   color: rgb(199, 178, 178);
   text-decoration: none;
+  transition: .5s ease;
 }
 
 .iconLinks > a:hover{
-  opacity: .8;
+  color: white;
+  transform: translateY(-5px);
+}
+
+h3{
+  font-size: 2.8125em;
+  padding-top: 120px;
+  padding-left: 23px;
+  text-align: left;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px){
+  .App{
+    padding-left: 288px;
+  }
+
+  .imgIBox{
+    width: 245px;
+    height: 245px;
+  }
+
+  .homeText{
+    font-size: 20px;
+    margin: 25px;
+  }
+
+  .homeTitle{
+    font-size: 3.125em;
+  }
+
+  .homeDesc{
+    font-size: 1.125em;
+  }
 }

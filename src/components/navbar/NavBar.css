@@ -12,6 +12,8 @@
     margin: 0;
     text-align: left;
     color: white;
+    transition: .8s ease;
+    z-index: 1;
 }
 
 .colorE{
@@ -39,6 +41,8 @@
 
 .buttonsNavBox{
     margin-top: 32px;
+    width: 240px;
+    transition: .8s ease;
 }
 
 .buttonsNav{
@@ -69,9 +73,8 @@
 }
 
 .nav.hidden{
-    transform: translateX(-288px) ;
+    transform: translateX(-320px) ;
     display: hidden;
-    transition: .8s ease;
 }
 
 .buttonBox:hover{
@@ -107,4 +110,17 @@
 
 .emailDes > .emailName{
     font-weight: 600;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px){
+    .nav{
+        width: 288px;
+    }
+
+    .buttonsNavBox{
+        width: 208px;
+    }
+    .nav.hidden{
+        transform: translateX(-288px);
+    }
 }

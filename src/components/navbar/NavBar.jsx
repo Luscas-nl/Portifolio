@@ -8,8 +8,14 @@ function NavBar(props) {
     function navHidden(){
         const nav = document.querySelector(".nav")
         const button = document.querySelector(".buttonBox")
+        const app = document.querySelector(".App")
+        const menu = document.querySelector(".menuButton")
+
+        document.documentElement.style.setProperty('--transition-time-app', ".6s")
         button.classList.toggle("abs")
         nav.classList.toggle("hidden")
+        app.classList.toggle("hidden")
+        menu.classList.toggle("hidden")
     }
 
     return(
@@ -24,9 +30,9 @@ function NavBar(props) {
 
             <div className="buttonsNav">
                 <div className="buttonsNavBox">
-                    <NavButton icon="home" text="Home" />
-                    <NavButton icon="user" text="About" />
-                    <NavButton icon="envelope" text="Contacts" />
+                    <NavButton icon="home" text="Home" refe="home"/>
+                    <NavButton icon="user" text="Sobre" refe="about" />
+                    <NavButton icon="envelope" text="Contatos" refe="contacts" />
                 </div>
             </div>
 
